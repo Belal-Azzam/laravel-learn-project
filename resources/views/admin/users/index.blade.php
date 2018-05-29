@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 
 @section('content')
+    @if(Session::has('message'))
+        <p>{{session('message')}}</p>
+    @endif
     <h1>Users</h1>
 
     <table class="table table-bordered">
